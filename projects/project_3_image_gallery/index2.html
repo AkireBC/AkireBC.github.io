@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erika's Image Gallery</title>
+
+    <style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  background-image: url("");
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+ /* Right-aligned link */
+ .topnav a.right {
+    float: right;
+  }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* about the web image gallery */
+.about {
+  background-image: url("images/about_me_pexels_antoni_shkraba.jpg");
+  background-color: #aaa;
+  border: 1px solid black;
+  height: 120px;
+  width: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 20px;
+}
+
+.about2 {
+  background-image: url("images/surfboards_pexels_chelsey_horne.jpg");
+  background-color: #aaa;
+  border: 1px solid black;
+  height: 120px;
+  width: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color:burlywood;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-color:gray;
+  object-fit: contain;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn img {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+img {
+  width: 200px;
+  height: 900px;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+h2 {
+  text-align: left;
+}
+
+h5 {
+  text-align: center;
+}
+
+</style>
+
+<script src="script/all.min.js"></script>
+
+</head>
+<body>
+
+<div class="header">
+  <h1>Welcome To My <span>Gallery</span></h1>
+    <p>A <b>responsive</b> website created by me.</p>
+</div>
+
+<div class="topnav">
+  <a href="index2.html"><i class="fa-solid fa-house"></i>Home</a>
+  <a href="chameleon.html">Chameleon</a>
+  <a href="funny.html">Funny</a>
+  <a href="surf.html">Surf</a>
+  <a href="vacation.html">Vacation</a>
+
+  <a href="https://twitter.com/" style="float:right"><i class="fa-brands fa-twitter"></i></a>
+
+  <a href="https://facebook.com/" style="float:right"><i class="fa-brands fa-facebook"></i></a>
+
+  <a href="https://www.linkedin.com/" style="float:right"><i class="fa-brands fa-linkedin"></i></a>
+
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>IMAGE GALLERY INSPIRATION</h2>
+      <h6>HTML and CSS Image Gallery, Oct 11, 2022</h6>
+      <div class="about" style="height:200px;"></div>
+      <p><a href="https://www.pexels.com/photo/person-using-macbook-pro-on-table-4348403/" >Image taken by Antoni Shkraba</a></p>
+      <p>Here you will find a collection of images.  These images belong in four categories.  The categories are: chameleon, funny, surf, and vacation.  I hope you enjoy these images.  All these images come from <a href="https://www.pexels.com/" >pexels.com</a></p>
+    </div>
+    <div class="card">
+      <h2><a href="surf.html">Great surfing images</a></h2>
+      <div class="about2" style="height:200px;"></div>
+      <p><a href="https://www.pexels.com/photo/assorted-colors-of-surfboard-757133/" >Image taken by Chelsey Horne</a></p>
+      
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2><a href="chameleon.html">Cute images of chameleons</a></h2>
+      <div class="about3"><img src="images/green_chameleon_pexels_pixabay.jpg" alt="A green chameleon close up." style="height:100px;"></div>
+      <p><a href="https://www.pexels.com/photo/green-and-yellow-chameleon-close-up-photography-70556/">Image taken by Pixabay</a></p>
+    </div>
+    <div class="card">
+      <h2><a href="funny.html">Funny images of animals</a></h2>
+      <div class="about3"><img src="images/funny_pexels_samson_katt.jpg" alt="A cute dog wearing glasses." style="height:100px;"></div>
+      <p><a href="https://www.pexels.com/photo/cute-dog-wearing-eyeglasses-5257587/">Image taken by Samson Katt</a></p>
+    </div>
+    <div class="card">
+      <h2><a href="vacation.html">Vacation getaways</a></h2>
+      <div class="about3"><img src="images/travel6_pexels_boonkong_boonpeng.jpg" alt="A swimming pool beside houses and trees. " style="height:100px;"></div>
+      <p><a href="https://www.pexels.com/photo/swimming-pool-beside-houses-and-trees-1134178/">Image taken by Boonkong Boonpeng</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h5>© copyright Erika Borrali</h5>
+</div>
+
+</body>
+</html>
+
+

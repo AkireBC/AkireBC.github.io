@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erika's Image Gallery</title>
+    
+    <style>
+
+      * {
+        box-sizing: border-box;
+      }
+      
+      /* Style the body */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+      
+      /* Header/logo Title */
+      .header {
+        background-image: url("");
+        padding: 80px;
+        text-align: center;
+        background: #1abc9c;
+        color: white;
+      }
+      
+      /* Increase the font size of the heading */
+      .header h1 {
+        font-size: 40px;
+      }
+      
+      /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+      }
+      
+      /* Style the navigation bar links */
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+      
+      
+      /* Right-aligned link */
+      .navbar a.right {
+        float: right;
+      }
+      
+      /* Change color on hover */
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      /* Active/current link */
+      .navbar a.active {
+        background-color: #666;
+        color: white;
+      }
+      
+      /* Column container */
+      .row {  
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+      }
+      
+      /* Create two unequal columns that sits next to each other */
+      /* Sidebar/left column */
+      .side {
+        -ms-flex: 30%; /* IE10 */
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+      
+      /* Main column */
+      .main {   
+        -ms-flex: 70%; /* IE10 */
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+      }
+      
+      /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 700px) {
+        .row {   
+          flex-direction: column;
+        }
+      }
+      
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .navbar a {
+          float: none;
+          width: 100%;
+        }
+      }
+
+/* second part */
+
+body {
+background-color: #f1f1f1;
+padding: 20px;
+font-family: Arial;
+}
+
+/* Center website */
+.main {
+max-width: 1000px;
+margin: auto;
+}
+
+h1 {
+font-size: 50px;
+word-break: break-all;
+}
+
+.row {
+margin: 10px -16px;
+}
+
+/*check this codes*/
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+float: left;
+width: 33.33%;
+
+}
+
+/* Clear floats after rows */ 
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Content */
+.content {
+  background-color:burlywood;
+padding: 10px;
+}
+
+h5 {
+  text-align: center;
+}
+
+</style>
+
+
+<script src="script/all.min.js"></script>
+
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome To My <span>Gallery</span></h1>
+        <p>A <b>responsive</b> website created by me.</p>
+      </div>
+
+      <div class="navbar">
+        <a href="index2.html" class="active">Home</a>
+        <a href="chameleon.html">Chameleon</a>
+        <a href="funny.html">Funny</a>
+        <a href="surf.html">Surf</a>
+        <a href="vacation.html">Vacation</a>
+
+        <a href="https://twitter.com/" style="float:right"><i class="fa-brands fa-twitter"></i></a>
+
+        <a href="https://facebook.com/" style="float:right"><i class="fa-brands fa-facebook"></i></a>
+
+        <a href="https://www.linkedin.com/" style="float:right"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="images/green_orange_chameleon_pexels_pixabay.jpg" alt="A yellow and green coated lizard." style="width:400px;height:400px;">
+      <h4>Chameleon</h4>
+      <p><a href="https://www.pexels.com/photo/yellow-and-green-coated-lizard-62289/">Image taken by Pixabay</a></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/green_blackdots_chameleon_pexels_raja_clickz.jpg" alt="A green-yellow with black spots chameleon on a brach." style="width:400px;height:400px;">
+      <h4>Chameleon</h4>
+      <p><a href="https://www.pexels.com/photo/chameleon-on-branch-3151186/">Image taken by Raja Clickz</a></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/white_chameleon_pexels_jiri_mikolas.jpg" alt="A close up shot of a white-yellow chameleon." style="width:400px;height:400px;">
+      <h4>Chameleon</h4>
+      <p><a href="https://www.pexels.com/photo/close-up-shot-of-a-chameleon-4873016/">Image taken by Jiri Mikolas</a></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="content">
+      <img src="images/green_chameleon_pexels_jeffry_surianto.jpg" alt="A light-yellow with tints of green chameleon on a tree branch." style="width:400px;height:400px;">
+      <h4>Chameleon</h4>
+      <p><a href="https://www.pexels.com/photo/selective-focus-photo-of-a-chameleon-on-a-tree-branch-8807476/">Image taken by J Surianto</a></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/redish_chameleon_pexels_george_lebada.jpg" alt="A redish chameleon close up." style="width:400px;height:400px;">
+      <h4>Chameleon</h4>
+      <p><a href="https://www.pexels.com/photo/red-chameleon-567540/">Image taken by George Lebada </a></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/green_pink_chameleon_pexels_egor_kamelev.jpg" alt="A close up green-blue chameleon." style="width:400px;height:400px;">
+      <h4>Chameleon</h4>
+      <p><a href="https://www.pexels.com/photo/green-chameleon-754100/">Image taken by Egor Kamelev</a></p>
+    </div>
+  </div>
+</div>
+<!-- END MAIN -->
+
+<div class="footer">
+  <h5>© copyright Erika Borrali</h5>
+</div>
+
+</body>
+</html>
+
+
+
+    

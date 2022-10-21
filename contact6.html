@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erika's Portfolio</title>
+        <link rel="stylesheet" href="styles/main.css">
+
+
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+              }
+              
+              .image {
+                background: url(images/background_pexels_pixabay.jpg) no-repeat center; 
+                background-size: cover;
+                height: 800px;
+                position: relative;
+                
+              }
+              
+              .image-text {
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: rgb(18, 139, 79);
+                }
+        
+        
+              
+              h1{
+                background-color: azure;
+                border-style: solid;
+                border-color:brown;
+                
+                padding:10px;
+                border-bottom-left-radius: 25px;
+                border-top-right-radius: 25px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+              }
+        
+              button{
+                border-style:solid;
+                border-top-width: thin;
+                
+              }
+        
+              input[type=text]{
+                    width: 100%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    box-sizing: border-box;
+                    border-bottom: 2px solid blue;
+                    background-color: #d4e4df;
+                }
+        
+                input[type=email]{
+                    width: 100%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    box-sizing: border-box;
+                    border-bottom: 2px solid blue;
+                    background-color: #d4e4df;
+                }
+        
+                input[type=tel]{
+                    width: 100%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    box-sizing: border-box;
+                    border-bottom: 2px solid blue;
+                    background-color: #d4e4df;
+                }
+        
+                input[type=text]:focus{
+                    background-color:lightblue;
+                }
+        
+                input[type=tel]:focus{
+                    background-color:lightblue;
+                }
+        
+                input[type=email]:focus{
+                    background-color:lightblue;
+                }
+        
+                input[type=button] {
+                    background-color:#04AA6D;
+                    border: none;
+                    color:aliceblue;
+                    padding: 16px 20px;
+                    text-decoration: none;
+                    margin: 20px 2px;
+                    cursor: pointer;
+                }
+
+                .footer {
+                    display:block;
+                    padding: 50px;
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+
+                .footer p {
+                    
+                    margin-top: 20px;
+                    color:rgb(5, 255, 230);
+                    text-decoration-line:underline;
+                    text-align:center;
+                    text-transform: uppercase;
+                    font-family: "Roboto Slab",sans-serif;
+                }
+        
+
+                .contact {
+                    opacity: 0.6;
+                }
+              </style>
+
+            <script src="scripts/all.min.js"></script>   
+
+    </head>
+
+    
+
+    <body>
+       
+        <header>
+            <h1>Erika Borrali</h1>
+    
+            <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact6.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div id="navigation">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/erika-borrali-338601241/" ><i class="fa-brands fa-linkedin"></i>Follow Me</a></li>
+                        <li><a href="mailto:borralierika@gmail.com"><i class="fa-solid fa-envelope"></i>Send email</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <div class="image">
+        <div class="image-text">
+            <div class="topnav">
+                </div>
+              <h1 class="contact" style="font-size:45px">Contact Me:<br></h1>
+
+              <form>
+                <label for="fName">First Name:</label><br>
+                      <input type="text" id="fName"  name="fname" required placeholder="Your First Name">
+        
+                <label for="lName">Last Name:</label><br>
+                      <input type="text" id="lName"  name="lname" required placeholder="Your Last Name"> 
+                      
+                <label for="telephone">Telephone:</label><br>
+                      <input type="tel" id="telephone"  placeholder="Your Telephone Number">  
+                      
+                <label for="email">Email:</label><br>
+                      <input type="email" id="email" name="email" required placeholder="Write A Valid Email">  
+                      
+    
+                <input type="button" value="Hire me" id="button" class="submit">
+            </form>
+            </div>
+            </div>
+
+        <div class="footer">
+            <p>Copyright&copy; 2022 Erika Borrali</p>
+        </div>
+    
+    </body>
+    </html>

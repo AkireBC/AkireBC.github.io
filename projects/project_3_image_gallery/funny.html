@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erika's Image Gallery</title>
+    
+<style>
+
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Style the body */
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+        }
+        
+        /* Header/logo Title */
+        .header {
+          background-image: url("images/green_chameleon_pexels_pixabay.jpg");
+          padding: 80px;
+          text-align: center;
+          background: #1abc9c;
+          color: white;
+        }
+        
+        /* Increase the font size of the heading */
+        .header h1 {
+          font-size: 40px;
+        }
+        
+        /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+        .navbar {
+          overflow: hidden;
+          background-color: #333;
+          position: sticky;
+          position: -webkit-sticky;
+          top: 0;
+        }
+        
+        /* Style the navigation bar links */
+        .navbar a {
+          float: left;
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 20px;
+          text-decoration: none;
+        }
+        
+        
+        /* Right-aligned link */
+        .navbar a.right {
+          float: right;
+        }
+        
+        /* Change color on hover */
+        .navbar a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        /* Active/current link */
+        .navbar a.active {
+          background-color: #666;
+          color: white;
+        }
+        
+        /* Column container */
+        .row {  
+          display: -ms-flexbox; /* IE10 */
+          display: flex;
+          -ms-flex-wrap: wrap; /* IE10 */
+          flex-wrap: wrap;
+        }
+        
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+          -ms-flex: 30%; /* IE10 */
+          flex: 30%;
+          background-color: #f1f1f1;
+          padding: 20px;
+        }
+        
+        /* Main column */
+        .main {   
+          -ms-flex: 70%; /* IE10 */
+          flex: 70%;
+          background-color: white;
+          padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+          padding: 20px;
+          text-align: center;
+          background: #ddd;
+        }
+        
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+          .row {   
+            flex-direction: column;
+          }
+        }
+        
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+          .navbar a {
+            float: none;
+            width: 100%;
+          }
+        }
+
+        
+
+/* second part */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/*check this codes*/
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color:burlywood;
+  padding: 10px;
+}
+
+h5 {
+  text-align: center;
+}
+</style>
+
+<script src="script/all.min.js"></script>
+
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome To My <span>Gallery</span></h1>
+        <p>A <b>responsive</b> website created by me.</p>
+      </div>
+
+      <div class="navbar">
+        <a href="index2.html" class="active">Home</a>
+        <a href="chameleon.html">Chameleon</a>
+        <a href="funny.html">Funny</a>
+        <a href="surf.html">Surf</a>
+        <a href="vacation.html">Vacation</a>
+        <a href="https://twitter.com/" style="float:right"><i class="fa-brands fa-twitter"></i></a>
+
+        <a href="https://facebook.com/" style="float:right"><i class="fa-brands fa-facebook"></i></a>
+      
+        <a href="https://www.linkedin.com/" style="float:right"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="images/funny7_pexels_oleksandr_pidvalnyi.jpg" alt="A brown monkey eating a banana." style="width:400px;height:400px;">
+      <h4>Funny</h4>
+      <p><a href="https://www.pexels.com/photo/brown-monkey-321552/">Image taken by Oleksandr Pidvalnyi</a></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/funny6_pexels_amir_ghoorchiani.jpg" alt="A funny cat laughing." style="width:400px;height:400px;">
+      <h4>Funny</h4>
+      <p><a href="https://www.pexels.com/photo/close-up-photo-of-cat-with-its-eyes-closed-1183434/">Image taken by Amir Ghoorchiani</a></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/funny4_pexels_kat_smith.jpg" alt="A black and white border collie smiling." style="width:400px;height:400px;">
+      <h4>funny</h4>
+      <p><a href="https://www.pexels.com/photo/shallow-focus-photography-of-adult-black-and-white-border-collie-551628/">Image taken by Kat Smith</a></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="content">
+      <img src="images/funny5_pexels_francesco.jpg" alt="A smiling owl." style="width:400px;height:400px;">
+      <h4>Funny</h4>
+      <p><a href="https://www.pexels.com/photo/selective-focus-of-smiling-owl-1804976/">Image taken by Francesco</a></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/funny3_pexels_karolina_grabowska.jpg" alt="A cute white alpaca." style="width:400px;height:400px;">
+      <h4>Funny</h4>
+      <p><a href="https://www.pexels.com/photo/cute-white-alpaca-5840691/">Image taken by Karolina Grabowska</a></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/funny2pexels_kateryna_babaieva.jpg" alt="A siberian husky looking at you." style="width:400px;height:400px;">
+      <h4>Funny</h4>
+      <p><a href="https://www.pexels.com/photo/photo-of-siberian-husky-2853422/">Image taken by Kateryna Babaieva</a></p>
+    </div>
+  </div>
+</div>
+<!-- END MAIN -->
+
+<div class="footer">
+  <h5>© copyright Erika Borrali</h5>
+</div>
+
+</body>
+</html>
